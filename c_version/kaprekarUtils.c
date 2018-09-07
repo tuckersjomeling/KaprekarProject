@@ -3,6 +3,8 @@
 #include "kaprekarUtils.h"
 
 /**
+CODE CORRECTED BY TUCKER SJOMELING
+September 7, 2018
  * <p>This function tests whether the given input <code>n</code>
  * is a Kaprekar Number or not.  A Kaprekar Number is a non-negative
  * integer n whose square can be split into two positive integers
