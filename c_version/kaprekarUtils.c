@@ -44,10 +44,27 @@ int isKaprekar(int n) {
     second = square % modulus;
 
     //test if the split makes a Kaprekar number
-    if(second > 0 &&
-       first + second == n) {
-      return 1;
-    }
+    if (first % 10 != 0){
+        if(second > 0 &&
+        first + second == n) {
+        return 1;
+        }
+        return 0;
+      }
+
+    else if (first % 10 ==0){
+        if (first/10+second==n){
+          return 1;
+        }
+        else if (first/100+second==n){
+          return 1;
+        }
+        else if (first+second==n){
+          return 1;
+        }
+
+       return 0;
+     }
   }
   return 0;
 
