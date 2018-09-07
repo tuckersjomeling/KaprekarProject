@@ -10,7 +10,8 @@ int main(int argc, char **argv) {
     exit(1);
   }
 
-  int n = atoi(argv[1]);
+  int n;
+  n = atoi(argv[1]);
 
   if(isKaprekar(n)) {
     printf("%d is a Kaprekar Number!\n", n);
